@@ -6,6 +6,9 @@
 // Personal Blog: songlee24.github.io
 //////////////////////////////////////////////////////////////////////////
 
+#ifndef __REACTOR_LOGGER_H__
+#define __REACTOR_LOGGER_H__
+
 #include <cstdarg>
 #include <cstdio>
 
@@ -36,3 +39,5 @@ public:
 		(void)0 : reactor::Logger::log_handler(reactor::LOG_LEVEL_##level, __FILE__, __LINE__, fmt, ##arg)
 
 }
+
+#endif  // __REACTOR_LOGGER_H__
